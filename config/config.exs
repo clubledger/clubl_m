@@ -19,11 +19,11 @@ import Config
 # seo_description: Will go in your meta description tag
 # css_theme_default: Can be "light" or "dark" - if "dark" it will add the class "dark" to the <html> element by default
 config :clubl_m,
-  app_name: "Petal",
-  business_name: "Petal Pty Ltd",
-  support_email: "support@example.com",
+  app_name: "CLUBL Manage",
+  business_name: "CLUB-LEDGER Services Pty Ltd",
+  support_email: "info@clubledger.com",
   mailer_default_from_name: "Support",
-  mailer_default_from_email: "support@example.com",
+  mailer_default_from_email: "support@clubledger.com",
   logo_url_for_emails: "https://res.cloudinary.com/wickedsites/image/upload/v1643336799/petal/petal_logo_light_w5jvlg.png",
   seo_description: "SaaS boilerplate template powered by Elixir's Phoenix and TailwindCSS",
   css_theme_default: "dark"
