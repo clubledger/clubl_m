@@ -1,0 +1,154 @@
+<LandingPage.css />
+
+<% main_menu_items = [
+    %{label: gettext("Features"), path: "#features"},
+    %{label: gettext("Testimonials"), path: "#testimonials"},
+    %{label: gettext("Pricing"), path: "#pricing"},
+] %>
+
+<LandingPage.header
+  current_user={assigns[:current_user]}
+  conn={@conn}
+  current_page={:landing}
+  main_menu_items={main_menu_items}
+  user_menu_items={user_menu_items(@current_user)}
+/>
+
+<LandingPage.hero image_src={Routes.static_path(@conn, "/images/landing_page/hero.svg")}>
+  <:title>
+    <span><%= gettext("The secret of") %></span>
+    <span class="text-primary-600">
+      <%= gettext("getting ahead") %>
+    </span>
+    <span><%= gettext("is getting started") %>.</span>
+  </:title>
+
+  <:action_buttons>
+    <.button
+      label={gettext("Get started")}
+      link_type="a"
+      color="primary"
+      to={Routes.user_registration_path(@conn, :new)}
+      size="lg"
+    />
+
+    <.button
+      label={gettext("Guide")}
+      link_type="a"
+      color="white"
+      to="https://docs.petal.build"
+      size="lg"
+    />
+  </:action_buttons>
+
+  <:description>
+    <%= gettext("Adapt this landing page template to your own web application. Now you can make your next great web app in record time.") %>
+  </:description>
+</LandingPage.hero>
+
+<LandingPage.features features={[
+  %{
+    title: "Authentication",
+    description: Faker.Lorem.sentence(10..20),
+    icon: :lightning_bolt,
+  },
+  %{
+    title: "HTML Emails",
+    description: Faker.Lorem.sentence(10..20),
+    icon: :puzzle,
+  },
+  %{
+    title: "Wallaby testing",
+    description: Faker.Lorem.sentence(10..20),
+    icon: :at_symbol,
+  },
+]} />
+
+<LandingPage.solo_feature
+  title="Page builder"
+  description="Build out your web application by navigating to unused routes and creating pages out of thin air!"
+  image_src={Routes.static_path(@conn, "/images/landing_page/feature1.svg")}
+  background_color="primary"
+>
+  <.button
+    variant="solid"
+    link_type="a"
+    to="/test-page"
+    label="Try it out now"
+    color="primary"
+    size="lg"
+    class="mt-8"
+  />
+</LandingPage.solo_feature>
+
+<LandingPage.solo_feature
+  inverted
+  title="Layouts"
+  description="Layouts can be tricky to build. Petal Pro makes it easy with it's stacked and sidebar layouts."
+  image_src={Routes.static_path(@conn, "/images/landing_page/feature2.svg")}
+  background_color="secondary"
+/>
+
+<LandingPage.testimonials testimonials={
+    [
+      "https://res.cloudinary.com/wickedsites/image/upload/v1636595191/dummy_data/avatar_32_cayiid.png",
+      "https://res.cloudinary.com/wickedsites/image/upload/v1636595191/dummy_data/avatar_26_mjcxen.png",
+      "https://res.cloudinary.com/wickedsites/image/upload/v1636595189/dummy_data/avatar_10_d3tw5q.png",
+      "https://res.cloudinary.com/wickedsites/image/upload/v1636595190/dummy_data/avatar_17_eolat2.png",
+      "https://res.cloudinary.com/wickedsites/image/upload/v1636595189/dummy_data/avatar_13_xrlvql.png",
+    ] |> Enum.map(fn src ->
+      %{
+        name: Faker.Person.name(),
+        title: "CEO, #{Faker.Company.name()}",
+        image_src: src,
+        content: Faker.Lorem.sentence(10..20)
+      }
+    end)
+  } />
+
+<LandingPage.pricing plans={[
+  %{
+    name: "Essential",
+    price: "49",
+    description: Faker.Lorem.sentence(8..10),
+    sign_up_path: "/",
+    features: [
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+    ]
+  },
+  %{
+    name: "Pro",
+    price: "149",
+    description: Faker.Lorem.sentence(8..10),
+    sign_up_path: "/",
+    features: [
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+    ]
+  },
+  %{
+    name: "Enterprise",
+    price: "999",
+    description: Faker.Lorem.sentence(8..10),
+    sign_up_path: "/",
+    features: [
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+      Faker.Lorem.sentence(4..10),
+    ]
+  },
+]} />
+
+<LandingPage.footer main_menu_items={main_menu_items} />
+
+<LandingPage.javascript />

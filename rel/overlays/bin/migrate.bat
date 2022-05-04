@@ -1,0 +1,1 @@
+call "%~dp0\clubl_m" eval ClubLM.Release.migrate

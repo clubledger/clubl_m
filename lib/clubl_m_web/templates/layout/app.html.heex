@@ -1,0 +1,15 @@
+<main>
+  <%= if get_flash(@conn, :info) do %>
+    <.container class="flex justify-center py-5">
+      <.alert color="info" class="max-w-sm" label={get_flash(@conn, :info)} />
+    </.container>
+  <% end %>
+
+  <%= if get_flash(@conn, :error) do %>
+    <.container class="flex justify-center py-5">
+      <.alert color="danger" class="max-w-sm" label={get_flash(@conn, :error)} />
+    </.container>
+  <% end %>
+
+  <%= @inner_content %>
+</main>

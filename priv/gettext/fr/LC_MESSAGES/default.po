@@ -1,0 +1,225 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: fr\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:45
+msgid "Adapt this landing page template to your own web application. Now you can make your next great web app in record time."
+msgstr "Adaptez ce modèle de page de destination à votre propre application Web. Vous pouvez désormais créer votre prochaine application Web en un temps record."
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:19
+msgid "The secret of"
+msgstr "Le secret pour"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:21
+msgid "getting ahead"
+msgstr "l'avant est de"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:23
+msgid "is getting started"
+msgstr "commencer"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:26
+msgid "Get started"
+msgstr "Commencer"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:34
+msgid "Guide"
+msgstr "Guider"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:4
+msgid "Features"
+msgstr "Caractéristiques"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:6
+msgid "Pricing"
+msgstr "Tarification"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/templates/page/landing_page.html.heex:5
+msgid "Testimonials"
+msgstr "Témoignages"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/components/landing_page.ex:181
+msgid "Trusted by brands all over the world"
+msgstr "Approuvé par les marques du monde entier"
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_email_live.ex:27
+#: lib/clubl_m_web/menus.ex:105
+msgid "Change email"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/menus.ex:132
+msgid "Dashboard"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/menus.ex:114
+msgid "Edit notifications"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/menus.ex:123
+msgid "Edit password"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/menus.ex:96
+msgid "Edit profile"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_profile_live.ex:22
+msgid "Name"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/menus.ex:87
+msgid "Settings"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_profile_live.ex:27
+msgid "Update profile"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_profile_live.ex:23
+msgid "eg. John Smith"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_email_live.ex:49
+#: lib/clubl_m_web/live/user_settings/edit_password_live.ex:61
+msgid "A link to confirm your e-mail change has been sent to the new address."
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_notifications.ex:22
+#: lib/clubl_m_web/live/user_settings/user_onboarding_live.ex:60
+msgid "Allow marketing notifications"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_password_live.ex:41
+msgid "Change password"
+msgstr ""
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/clubl_m_web/live/user_settings/edit_email_live.ex:22
+msgid "Change your email"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_password_live.ex:23
+msgid "Current password"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/controllers/user_confirmation_controller.ex:22
+msgid "If your email is in our system and it has not been confirmed yet, you will receive an email with instructions shortly."
+msgstr ""
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/clubl_m_web/live/user_settings/edit_password_live.ex:30
+msgid "New password"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_password_live.ex:37
+msgid "New password confirmation"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_notifications.ex:36
+msgid "Profile updated"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/user_onboarding_live.ex:64
+msgid "Submit"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/user_onboarding_live.ex:97
+msgid "Thank you!"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/user_onboarding_live.ex:40
+msgid "To join our community, help us improve by completing your profile."
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_notifications.ex:44
+msgid "Update failed. Please check the form for issues"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/controllers/user_confirmation_controller.ex:51
+msgid "User confirmation link is invalid or it has expired."
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/controllers/user_confirmation_controller.ex:37
+msgid "User confirmed successfully."
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/controllers/user_registration_controller.ex:23
+msgid "User created successfully."
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/user_onboarding_live.ex:36
+msgid "Welcome!"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/user_onboarding_live.ex:51
+msgid "What is your name?*"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/controllers/user_auth.ex:189
+msgid "You do not have access to this page."
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/controllers/user_auth.ex:174
+msgid "You must log in to access this page."
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/controllers/user_auth.ex:202
+msgid "Your account is not accessible."
+msgstr ""
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/clubl_m_web/live/user_settings/user_onboarding_live.ex:52
+msgid "eg. John"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/clubl_m_web/live/user_settings/edit_email_live.ex:23
+msgid "eg. john@gmail.com"
+msgstr ""
