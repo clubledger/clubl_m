@@ -1,0 +1,3 @@
+Registration confirmation email is getting sent from the registered email address rather than the system email address I think.
+Set up support@clubl.com for emails.
+Remove Petal branding on all emails

@@ -23,10 +23,10 @@ config :clubl_m,
   business_name: "CLUB-LEDGER Services Pty Ltd",
   support_email: "info@clubledger.com",
   mailer_default_from_name: "Support",
-  mailer_default_from_email: "support@clubledger.com",
+  mailer_default_from_email: "mark@clubledger.com",
   logo_url_for_emails: "https://res.cloudinary.com/wickedsites/image/upload/v1643336799/petal/petal_logo_light_w5jvlg.png",
   seo_description: "SaaS boilerplate template powered by Elixir's Phoenix and TailwindCSS",
-  css_theme_default: "dark"
+  css_theme_default: "light"
 
 config :clubl_m,
   ecto_repos: [ClubLM.Repo]
