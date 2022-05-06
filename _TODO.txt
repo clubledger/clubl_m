@@ -1,0 +1,3 @@
+Set up support@clubl.com for emails.
+Remove Petal branding on all emails.
+Integrate Slack.

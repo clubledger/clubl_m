@@ -58,16 +58,16 @@ defmodule ClubLM.Components.LandingPage do
             </ul>
           </div>
 
-          <div class="flex items-center justify-end ml-auto lg:w-3/12">
-            <div class="mr-3">
+        <div class="flex items-center justify-end ml-auto lg:w-3/12">
+            <!-- TODO: Remove <div class="mr-3">
               <.language_select
                 current_locale={Gettext.get_locale(ClubLMWeb.Gettext)}
                 language_options={Application.get_env(:clubl_m, :language_options)}
               />
-            </div>
-            <div class="mr-4">
+            </div>-->
+            <!-- TODO: Remove <div class="mr-4">
               <ClubLMWeb.Components.ColorSchemeSwitch.color_scheme_switch />
-            </div>
+            </div>-->
 
             <div class="hidden md:block">
               <.user_menu_dropdown
@@ -155,20 +155,20 @@ defmodule ClubLM.Components.LandingPage do
                 </p>
               </div>
               <div class="space-x-2 text-center lg:text-left fade-in-animation">
-                <%= render_slot(@action_buttons) %>
+                <%# TODO: = render_slot(@action_buttons) %>
               </div>
             </div>
           </div>
           <div class="w-full px-3 mb-12 lg:w-1/2 lg:mb-0">
             <div class="flex items-center justify-center lg:h-128">
-              <img id="hero-image" class="fade-in-from-right-animation lg:max-w-lg max-h-[500px]" src={@image_src} alt="">
+              <!-- TODO: <img id="hero-image" class="fade-in-from-right-animation lg:max-w-lg max-h-[500px]" src={@image_src} alt="">-->
             </div>
           </div>
         </div>
 
-        <div class="mt-40">
+        <!-- TODO: <div class="mt-40">
           <.logo_cloud />
-        </div>
+        </div>-->
       </.container>
     </section>
     """
@@ -176,7 +176,7 @@ defmodule ClubLM.Components.LandingPage do
 
   def logo_cloud(assigns) do
     ~H"""
-    <div id="logo-cloud" class="container px-4 mx-auto">
+    <!-- TODO: <div id="logo-cloud" class="container px-4 mx-auto">
       <h2 class="mb-10 text-2xl text-center text-gray-500 fade-in-animation dark:text-gray-300">
         <%= gettext("Trusted by brands all over the world") %>
       </h2>
@@ -268,7 +268,7 @@ defmodule ClubLM.Components.LandingPage do
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     """
   end
 
@@ -277,7 +277,7 @@ defmodule ClubLM.Components.LandingPage do
       |> assign_new(:features, fn -> [] end)
 
     ~H"""
-    <section
+    <!-- TODO: <section
       id="features"
       class="relative z-10 py-16 text-center transition duration-500 ease-in-out bg-white md:py-32 dark:bg-gray-900 dark:text-white"
     >
@@ -307,7 +307,7 @@ defmodule ClubLM.Components.LandingPage do
           <% end %>
         </div>
       </.container>
-    </section>
+    </section>-->
     """
   end
 
@@ -318,7 +318,7 @@ defmodule ClubLM.Components.LandingPage do
       |> assign_new(:inner_block, fn -> nil end)
 
     ~H"""
-    <section
+    <!-- TODO: <section
       id="benefits"
       class="overflow-hidden transition duration-500 ease-in-out bg-gray-50 md:pt-0 dark:bg-gray-800 dark:text-white"
       data-offset="false"
@@ -353,7 +353,7 @@ defmodule ClubLM.Components.LandingPage do
           </div>
         </div>
       </.container>
-    </section>
+    </section>-->
     """
   end
 
@@ -362,7 +362,7 @@ defmodule ClubLM.Components.LandingPage do
       |> assign_new(:testimonials, fn -> [] end)
 
     ~H"""
-    <section id="testimonials" class="relative z-10 transition duration-500 ease-in-out bg-white py-36 dark:bg-gray-900">
+    <!-- TODO: <section id="testimonials" class="relative z-10 transition duration-500 ease-in-out bg-white py-36 dark:bg-gray-900">
       <div class="overflow-hidden content-wrapper">
         <.container class="relative z-10">
           <div class="mb-5 text-center md:mb-12 section-header stagger-fade-in-animation">
@@ -376,13 +376,13 @@ defmodule ClubLM.Components.LandingPage do
           </div>
         </.container>
       </div>
-    </section>
+    </section>-->
     """
   end
 
   def testimonial_panel(assigns) do
     ~H"""
-    <div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 bg-primary-50 dark:bg-gray-700 dark:text-white carousel-cell last:mr-0">
+    <!-- TODO: <div class="w-full p-6 mr-10 overflow-hidden text-gray-700 transition duration-500 ease-in-out rounded-lg shadow-lg md:p-8 md:w-8/12 lg:w-5/12 bg-primary-50 dark:bg-gray-700 dark:text-white carousel-cell last:mr-0">
       <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
         <div class="relative text-lg font-medium md:flex-grow">
           <svg class="absolute top-[-20px] left-0 w-8 h-8 transform -translate-x-3 -translate-y-2 text-primary-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
@@ -404,7 +404,7 @@ defmodule ClubLM.Components.LandingPage do
           </div>
         </footer>
       </blockquote>
-    </div>
+    </div>-->
     """
   end
 
@@ -413,7 +413,7 @@ defmodule ClubLM.Components.LandingPage do
       |> assign_new(:plans, fn -> [] end)
 
     ~H"""
-    <section id="pricing" class="py-24 text-gray-700 transition duration-500 ease-in-out md:py-32 dark:bg-gray-800 bg-gray-50 dark:text-white stagger-fade-in-animation">
+   <!-- TODO <section id="pricing" class="py-24 text-gray-700 transition duration-500 ease-in-out md:py-32 dark:bg-gray-800 bg-gray-50 dark:text-white stagger-fade-in-animation">
       <.container>
         <div class="mx-auto mb-16 text-center md:mb-20 lg:w-7/12 ">
           <div class="mb-5 text-3xl font-bold md:mb-7 md:text-5xl fade-in-animation">Pricing</div>
@@ -426,7 +426,7 @@ defmodule ClubLM.Components.LandingPage do
           <% end %>
         </div>
       </.container>
-    </section>
+    </section>-->
     """
   end
 
@@ -437,7 +437,7 @@ defmodule ClubLM.Components.LandingPage do
       |> assign_new(:unit, fn -> "/m" end)
 
     ~H"""
-    <div class="relative flex flex-col h-full p-6 transition duration-500 ease-in-out bg-gray-200 rounded-lg dark:bg-gray-900 fade-in-animation">
+    <!-- TODO: <div class="relative flex flex-col h-full p-6 transition duration-500 ease-in-out bg-gray-200 rounded-lg dark:bg-gray-900 fade-in-animation">
       <%= if @most_popular do %>
         <div class="absolute top-0 right-0 mr-6 -mt-4">
           <div class="inline-flex px-3 py-1 mt-px text-sm font-semibold text-green-600 bg-green-200 rounded-full">
@@ -483,7 +483,7 @@ defmodule ClubLM.Components.LandingPage do
           label="Start free trial"
         />
       </div>
-    </div>
+    </div>-->
     """
   end
 
@@ -517,7 +517,7 @@ defmodule ClubLM.Components.LandingPage do
               <.link to="/license" label="License" class="pl-3 ml-3 border-l border-gray-500" />
             </p>
             <div class="order-first mb-4 lg:mb-0 lg:order-last">
-              <a target="_blank" class="inline-block p-2 mr-2 bg-gray-800 rounded hover:bg-gray-700 group" href="https://twitter.com/PetalFramework">
+              <a target="_blank" class="inline-block p-2 mr-2 bg-gray-800 rounded hover:bg-gray-700 group" href="https://twitter.com/clubledger">
                 <svg class="w-5 h-5 fill-gray-400 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">
                   <path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z"/>
                 </svg>

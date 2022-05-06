@@ -84,12 +84,18 @@ config :email_checker,
   smtp_retries: 2,
   timeout_milliseconds: :infinity
 
-# Uncomment when you want to send test emails:
+# TODO:
+  # Uncomment when you want to send test emails:
 # Also ensure in config.exs that mailer_default_from_email is set to an email that is whitelisted on Amazon SES
 # config :clubl_m, ClubLM.Mailer,
 #   adapter: Swoosh.Adapters.AmazonSES,
 #   region: System.get_env("AWS_REGION"),
 #   access_key: System.get_env("AWS_ACCESS_KEY"),
 #   secret: System.get_env("AWS_SECRET")
+
+config :clubl_m, ClubLM.Mailer,
+  adapter: Swoosh.Adapters.Mailjet,
+  api_key: System.get_env("MAILJET_API_KEY"),
+  secret: System.get_env("MAILJET_SECRET_KEY")
 
 config :clubl_m, :env, :dev
