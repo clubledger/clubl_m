@@ -69,7 +69,7 @@ defmodule ClubLM.MixProject do
       {:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
       {:wallaby, "~> 0.29.0", runtime: false, only: :test},
       {:heex_formatter, github: "feliperenan/heex_formatter"},
-      {:oban, "~> 2.11"}
+      {:oban, "~> 2.11"},
     ]
   end
 

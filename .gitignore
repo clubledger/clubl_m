@@ -38,3 +38,4 @@ npm-debug.log
 
 fly.toml
 Dockerfile
+dev.env.exs
